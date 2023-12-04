@@ -1,6 +1,7 @@
 # Robotic Arm Simulation
 
-![Robotic Arm](arm.jpg)
+!![Local Image](arm.png)
+
 
 This project represents a robotic arm model designed for simulation in Gazebo. The robotic arm is described using URDF (Unified Robot Description Format) and includes visual and collision elements.
 
