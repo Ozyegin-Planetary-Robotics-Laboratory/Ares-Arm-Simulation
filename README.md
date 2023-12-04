@@ -29,30 +29,22 @@ Before using this robotic arm simulation, make sure you have the following depen
    git clone <repository-url>
    cd <repository-directory>
 
-    Build the Workspace:
+2. **Build the Workspace:**
+   ```bash
+   catkin build
 
-    bash
+3. **Source the Workspace:**
+   ```bash
+   source devel/setup.bash
 
-catkin build
-
-Source the Workspace:
-
-bash
-
-source devel/setup.bash
-
-Launch the Simulation in Gazebo:
-
-bash
-
-roslaunch rover_arm_gazebo.launch
+4. **Launch the Simulation in Gazebo:**
+   ```bash
+  roslaunch rover_arm_gazebo.launch
 
 This will spawn the robotic arm in a Gazebo simulation environment.
 
-Launch RViz for Visualization:
-
-bash
-
-roslaunch rover_arm_rviz.launch
+5. **Launch RViz for Visualization:**
+   ```bash
+   roslaunch rover_arm_rviz.launch
 
 This will visualize the robotic arm model in RViz.
