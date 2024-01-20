@@ -1,0 +1,29 @@
+arm_controller:
+  type: "effort_controllers/JointTrajectoryController"
+  joints: [joint1, joint2, joint3, joint4, joint5]
+  gains:
+    joint1:
+      p: 75.0
+      i: 0.01
+      d: 10.0
+    joint2:
+      p: 75.0
+      i: 0.01
+      d: 10.0
+    joint3:
+      p: 75.0
+      i: 0.01
+      d: 10.0
+    joint4:
+      p: 75.0
+      i: 0.01
+      d: 10.0
+    joint5:
+      p: 75.0
+      i: 0.01
+      d: 10.0
+    
+
+joint_state_controller:
+  type: "joint_state_controller/JointStateController"
+  publish_rate: 50
