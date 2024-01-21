@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>new_ares</name>
+  <name>ares_arm_simulation</name>
   <version>0.0.0</version>
-  <description>The new_ares package</description>
+  <description>The ares_arm_simulation package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->
