@@ -6,7 +6,7 @@
    
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
       <arg name="world_name" value="worlds/empty.world"/>
-      <arg name="paused" value="true"/>
+      <arg name="paused" value="false"/>
       <arg name="use_sim_time" value="true"/>
       <arg name="gui" value="true"/>
       <arg name="headless" value="false"/>
@@ -20,7 +20,7 @@
           output="screen" />
     
     <rosparam file ="$(find ares_arm_simulation)/config/controller.yaml" command="load"/>
-      <node name= "controller_spawner" pkg= "controller_manager" type="spawner" respawn="false" output="screen" args="joint_state_controller arm_controller "/>
+      <node name= "controller_spawner" pkg= "controller_manager" type="spawner" respawn="false" output="screen" args="joint_state_controller manipulator_controller "/>
   
       
       <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen"/>     
